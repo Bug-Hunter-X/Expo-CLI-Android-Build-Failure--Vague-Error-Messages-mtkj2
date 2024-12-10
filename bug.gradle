@@ -1,0 +1,11 @@
+This bug occurs when using the Expo CLI to build an Android APK.  The build process fails with a cryptic error message, such as `Execution failed for task ':app:processDebugResources'.`, without providing specific details about the cause.  The error might be related to resource processing, but diagnosing it is difficult due to the lack of helpful information in the error message. This often happens with complex projects involving numerous libraries and custom configurations. Example of an insufficient error message:
+```
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/path/to/your/project/android/app/build.gradle'
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> Android resource linking failed
+```
